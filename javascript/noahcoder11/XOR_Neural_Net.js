@@ -202,7 +202,7 @@ class Dense {
     var inputGradient = dotProduct(output, transpose(this.weights))
     
     this.weights = subtract(this.weights, scale(weightGradient, learningRate))
-    this.bias = subtract(this.bias, scale(output, learningRate)
+    this.bias = subtract(this.bias, scale(output, learningRate))
     
     return inputGradient
   }
